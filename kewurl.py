@@ -1,3 +1,6 @@
+import os
+for i in ["flask", "replit"]:
+  os.system(f"pip install {i}")
 from flask import Flask, redirect 
 from replit import db  
 app = Flask('app')
