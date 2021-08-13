@@ -1,8 +1,9 @@
-import os
-for i in ["flask", "replit"]:
-  os.system(f"pip install {i}")
 from flask import Flask, redirect 
 from replit import db  
+try:
+  db["n"]
+except:
+  db["n"] = 0
 app = Flask('app')
 @app.route("/<l>") 
 def re(l):
@@ -12,6 +13,6 @@ def re(l):
 def n(link):
   db["n"] += 1
   db[str(db["n"])] = "https://"+link
-  return f"Your shortened url is https://t.amoghthecool.repl.co/{db['n']}"
+  return f"Your shortened url is https://kewl.amoghthecool.repl.co/{db['n']}"
 
 app.run(host='0.0.0.0', port=8080)

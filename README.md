@@ -1,2 +1,2 @@
 # kewurl
-it is essential that you open and run in replti
+it is essential that you open and run in replit

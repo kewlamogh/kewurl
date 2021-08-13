@@ -1,1 +1,1 @@
-
+run = "sh dep.sh; python3 kewurl.py"
