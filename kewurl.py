@@ -22,5 +22,4 @@ def n(link):
 @app.route("/")
 def h():
   return render_template("render.html")
-
 app.run(host='0.0.0.0', port=8080)

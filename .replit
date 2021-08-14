@@ -1,1 +1,2 @@
-run = "sh dep.sh; python3 kewurl.py"
+language = "python3"
+run = "python3 kewurl.py"
