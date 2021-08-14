@@ -3,6 +3,7 @@ def splitIntoChars(text):
   res = []
   for i in text:
     res.append(i)
+  return res
 
 chars = splitIntoChars("abcdefghijklmnopqrstuvwxyz")
-print(char[random.randint(0, len(chars))])
+print(chars[random.randint(0, len(chars) - 1)])
