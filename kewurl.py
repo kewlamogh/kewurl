@@ -9,7 +9,7 @@ app = Flask('app', template_folder = "t")
 def re(l):
   try:
     db[str(l)]
-    return redirect(db[str(l)])
+    return render_template("redir.html", lol = db[str(l)])
   except:
     return render_template("404.html")
 
