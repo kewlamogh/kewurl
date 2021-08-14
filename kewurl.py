@@ -17,7 +17,7 @@ def re(l):
 def n(link):
   db["n"] += 1;
   db[str(db["n"])] = "https://"+link.replace("_", "/");
-  return render_template("success.html", url = f"https://q.amoghthecool.repl.co/{db['n']}")
+  return render_template("success.html", url = f"https://y.amoghthecool.repl.co/{db['n']}")
 
 @app.route("/")
 def h():
