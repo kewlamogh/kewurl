@@ -24,4 +24,12 @@
 </style>
 <h1>Shorten a link</h1>
 <input id = 'l'> </input>
-<button onclick = "window.location.href = '/new/'+document.getElementById('l').value.replace('https://', '').replace('/', '_')">Shorten</input>
+<button id = "yet">Shorten</input>
+<script>
+  document.getElementById("yet").onclick = () => {
+    let link = document.getElementById('l').value;
+    link = link.replace('https://', '');
+    link = link.replace('/', '_')
+    window.location.href = '/new/'+ link.replace('/', '_');
+  }
+</script>

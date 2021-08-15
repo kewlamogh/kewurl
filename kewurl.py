@@ -1,5 +1,6 @@
 from flask import Flask, redirect, render_template
 from replit import db
+burl = "kewurl";
 try:
   db["n"]
 except:
@@ -17,9 +18,13 @@ def re(l):
 def n(link):
   db["n"] += 1;
   db[str(db["n"])] = "https://"+link.replace("_", "/");
-  return render_template("success.html", url = f"https://yods.amoghthecool.repl.co/{db['n']}")
+  return render_template("success.html", url = f"https://{burl}.amoghthecool.repl.co/{db['n']}")
 
 @app.route("/")
 def h():
   return render_template("render.html")
+
+@app.route("/docs")
+def docs():
+  return render_template("docs/docs.html")
 app.run(host='0.0.0.0', port=8080)
