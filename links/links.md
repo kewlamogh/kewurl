@@ -6,4 +6,3 @@
 # dev stuff
 - [templates] (https://replit.com/@AmoghTheCool/kewurl#t/404.html)
 - [main python file] (https://replit.com/@AmoghTheCool/kewurl#kewurl.py)
-- [rickroll safeguards] (https://replit.com/@AmoghTheCool/kewurl#help/reserved-for-me/a_secret.py)
