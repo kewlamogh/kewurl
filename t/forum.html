@@ -1,4 +1,5 @@
-
+<!DOCTYPE html>
+<html lang="en">
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
 	body {
@@ -23,16 +24,11 @@
     font-family: 'Gowun Dodum', sans-serif;
 	}
 </style>
-<h1>Shorten a link</h1>
-<input id = 'l'> </input>
-<button id = "yet">Shorten</button>
-<script>
-  document.getElementById("yet").onclick = () => {
-    let link = document.getElementById('l').value;
-    link = link.replace('https://', '');
-    link = link.replace('/', '_')
-    window.location.href = '/new/'+ link.replace('/', '_');
-  }
-</script>
+<h1>Rickroller Forum</h1>
+<input id = "yeet"> </input><button onclick = "window.location.href = '/post/'+document.getElementById('yeet').value.replace('/', '_')">Send Message</button>
 
-<br><a href = "/forum">Rickroller Forum</a>
+<br><br>
+<br><br>
+
+<a href = "/get_posts">Get posts</a>
+<a href = "/">Home</a>

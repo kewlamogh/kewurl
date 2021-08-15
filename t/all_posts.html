@@ -1,0 +1,21 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+	body {
+		text-align: center;
+	}
+
+	input {
+		border: 2px solid black;
+		outline: none;
+	}
+
+	* {font-family: 'Gowun Dodum', sans-serif;
+    color: white;
+    background-color: black;
+	}
+</style>
+<a href = "/forum">Back</a>
+{% for post_text in posts %}
+  <h1>{{ post_text }}</h1>
+{% endfor %}
+
